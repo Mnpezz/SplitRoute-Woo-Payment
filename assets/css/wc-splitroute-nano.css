@@ -1,0 +1,187 @@
+.wc-splitroute-payment-details {
+    background-color: #f8f9fa;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.wc-splitroute-address {
+    font-family: monospace;
+    word-break: break-all;
+}
+
+.wc-splitroute-copy-btn {
+    display: inline-block;
+    margin-left: 5px;
+    padding: 2px 8px;
+    font-size: 12px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.wc-splitroute-qr-code {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.wc-splitroute-qr-code img {
+    max-width: 200px;
+    height: auto;
+}
+
+.wc-splitroute-pay-button {
+    display: inline-block;
+    background-color: #4caf50 !important;
+    color: white !important;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.wc-splitroute-status-message {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-left: 4px solid #6c757d;
+    font-weight: bold;
+}
+
+.wc-splitroute-status-received {
+    background-color: #fff3cd;
+    border-left-color: #ffc107;
+}
+
+.wc-splitroute-status-completed {
+    background-color: #d4edda;
+    border-left-color: #28a745;
+}
+
+.wc-splitroute-status-expired {
+    background-color: #f8d7da;
+    border-left-color: #dc3545;
+}
+
+/* Modal styles */
+.splitroute-modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999999;
+    justify-content: center;
+    align-items: center;
+}
+
+.splitroute-modal {
+    background-color: #fff;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.splitroute-modal-header {
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.splitroute-modal-header h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.splitroute-modal-close {
+    font-size: 28px;
+    font-weight: bold;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.splitroute-modal-close:hover {
+    color: #333;
+}
+
+.splitroute-modal-body {
+    padding: 20px;
+}
+
+.splitroute-payment-details {
+    text-align: center;
+}
+
+.splitroute-address {
+    font-family: monospace;
+    background-color: #f5f5f5;
+    padding: 8px;
+    border-radius: 4px;
+    word-break: break-all;
+}
+
+.splitroute-copy-btn {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.splitroute-copy-btn:hover {
+    background-color: #45a049;
+}
+
+.splitroute-qr-container {
+    margin: 20px auto;
+    max-width: 200px;
+}
+
+.splitroute-qr-container img {
+    width: 100%;
+    height: auto;
+}
+
+.splitroute-payment-status {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-radius: 4px;
+}
+
+.splitroute-status-pending {
+    color: #ff9800;
+}
+
+.splitroute-status-paid {
+    color: #4CAF50;
+}
+
+.splitroute-status-completed {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.splitroute-status-expired {
+    color: #f44336;
+}
+
+.splitroute-status-error {
+    color: #f44336;
+} 
