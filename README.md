@@ -1,74 +1,47 @@
-# WooCommerce SplitRoute Nano Gateway
+# SplitRoute Nano Payment Gateway for WooCommerce
 
-Accept Nano (XNO) cryptocurrency payments in your WooCommerce store using the SplitRoute API.
+Accept Nano (XNO) cryptocurrency payments in your WooCommerce store with the SplitRoute payment gateway. This plugin allows for fast, feeless, and eco-friendly cryptocurrency payments with optional payment splitting capabilities.
 
 ## Features
 
-- Accept Nano (XNO) payments in your WooCommerce store
-- Real-time payment notifications via WebSockets
-- QR code for easy payments
-- Support for splitting payments to multiple destinations
-- Automatic payment verification and order status updates
-- Test mode for development and testing
-
-## Requirements
-
-- WordPress 5.0 or higher
-- WooCommerce 4.0 or higher
-- PHP 7.2 or higher
-- A SplitRoute API key
-- A Nano wallet address
+- Accept Nano (XNO) payments directly in your WooCommerce store
+- Real-time payment detection via WebSocket
+- QR code generation for easy mobile payments
+- Optional payment splitting between multiple Nano accounts
+- Detailed payment logs and transaction history
+- Mobile-friendly payment interface
 
 ## Installation
 
-1. Download the plugin zip file
-2. Go to WordPress Admin > Plugins > Add New
-3. Click "Upload Plugin" and select the zip file
-4. Activate the plugin
+1. Download the plugin ZIP file
+2. Go to WordPress Admin > Plugins > Add New > Upload Plugin
+3. Upload the ZIP file and activate the plugin
+4. Go to WooCommerce > Settings > Payments
+5. Enable "Nano (XNO) via SplitRoute" and click "Manage"
+6. Configure your SplitRoute API key and Nano account address
 
 ## Configuration
 
-1. Go to WooCommerce > Settings > Payments
-2. Click "Manage" next to "Nano (XNO) Cryptocurrency"
-3. Enable the payment method
-4. Enter your SplitRoute API key and Nano wallet address
-5. Configure other settings as needed
-6. Save changes
+### Required Settings
 
-## Split Payments
+- **SplitRoute API Key**: Get your API key from [SplitRoute](https://api.splitroute.com/api/v1/api-keys/register)
+- **Primary Nano Account**: Your main Nano account address where payments will be sent
 
-You can configure the plugin to split payments to multiple destinations. This is useful for:
+### Optional Settings
 
-- Paying affiliates or partners automatically
-- Distributing revenue to team members
-- Setting aside funds for taxes or fees
+- **Enable Split Payments**: Distribute payments between multiple Nano accounts
+- **Split Payment Destinations**: Configure additional payment recipients with percentages or fixed amounts
+- **Debug Log**: Enable detailed logging for troubleshooting
 
-To configure split payments:
+## Payment Splitting
 
-1. Enable "Split Payments" in the plugin settings
-2. Enter your split payment destinations in JSON format
-3. Save changes
-
-Example split payment configuration:
+To configure payment splitting, enable the option and add your split destinations in JSON format:
 json
 [
-{
-"account": "nano_address1",
-"percentage": 10,
-"description": "Partner Fee"
-},
-{
-"account": "nano_address2",
-"nominal_amount": 5,
-"description": "Fixed Fee"
-}
+    {
+        "account": "nano_address1",
+        "percentage": 10,
+        "description": "Partner Fee"
+    },
 ]
 
-
-## Support
-
-For support, please contact [your email or website].
-
-## License
-
-This plugin is licensed under the GPL v2 or later.
