@@ -1,9 +1,9 @@
 <?php
 /**
- * Plugin Name: WooCommerce SplitRoute Nano Gateway
+ * Plugin Name: Nano SplitRoute Payment Gateway
  * Plugin URI: https://yourwebsite.com/
  * Description: Accept Nano (XNO) payments in your WooCommerce store using SplitRoute API with payment splitting
- * Version: 1.1.0
+ * Version: 1.2.0
  * Author: mnpezz
  * API URI: https://splitroute.com/
  */
